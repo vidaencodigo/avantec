@@ -1,0 +1,10 @@
+<files .htaccess>
+
+order allow,deny
+
+deny from all
+
+</files>
+# Error Pages
+
+DirectoryIndex index.php

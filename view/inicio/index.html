@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Avantec</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+
+</head>
+
+<body>
+    <section class="logo--header">
+        <div class="content--logo--header">
+            <div>
+                <img src="assets/images/avantec.jpg" alt="avantec" class="logo--image">
+            </div>
+            <div>
+                <a href="#" class="btn b-action">HOLA!</a>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navigation">
+        <div class="content--navigation">
+            <ul>
+                <li>
+                    <a href="#" class="link">Inicio</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="#" class="link">Servicios</a>
+                    <span class="line"></span>
+                </li>
+                <li>
+                    <a href="#" class="link">Contacto</a>
+                    <span class="line"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero--image">
+
+        </div>
+        <div class="overlay">
+            <div class="text">
+                <h2>Hola <br> <span class="big--h">Somos AVANTEC</span> </h2>
+                <p>
+                    En <strong>AVANTEC</strong> te ayudamos a desarrollar e implementar soluciones tecnológicas que
+                    impulsen los resultados de tu
+                    negocio.
+                </p>
+                <div class="buttons--actions">
+                    <a href="#" class="btn b-hero">Hablemos!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content--action">
+
+        <section class="action">
+            <div class="content">
+                <h2>
+                    Te ayudamos alineando las últimas tecnologías
+                    con tus objetivos operativos y de negocio.
+                </h2>
+                <div class="buttons">
+                    <a href="#" class="btn c-action">Solicita más información</a>
+                </div>
+            </div>
+        </section>
+        <section class="welcome">
+            <div class="content">
+                <p>
+                    El equipo experimentado que te entrega <strong> soluciones tecnológicas
+                        para cubrir tus necesidades estratégicas y alcanzar tus metas.</strong>
+                </p>
+    
+            </div>
+        </section>
+    </section>
+
+    <section class="slider">
+        <h2>NUESTROS SERVICIOS</h2>
+        <!-- Flickity HTML init -->
+        <div class="gallery">
+            <div class="gallery--img --1">
+
+                <div class="gallery-cell">
+                    <div class="content--gallery">
+
+                        <div class="card--gallery">
+
+                            <h4>
+                                Sistemas de control
+                            </h4>
+                            <p>
+                                DISEÑO E INTEGRACIÓN DE SISTEMAS DE CONTROL
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery--img --2">
+
+                <div class="gallery-cell">
+                    <div class="content--gallery --odd">
+
+                        <div class="card--gallery">
+
+                            <h4>
+                                Telecomunicaciones
+                            </h4>
+                            <ul>
+                                <li> Cableado Estructurado</li>
+                                <li>Redes de Voz y Datos</li>
+                                <li>Sistema de Intercomunicación y Voceo</li>
+                                <li>Radiocomunicación</li>
+                                <li>Sistema de Seguridad Física Integral: CCTV y Control de Acceso</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        let flkty = new Flickity('.gallery', {
+            // options
+            cellAlign: 'left',
+            contain: true
+        });
+
+    </script>
+</body>
+
+</html>
