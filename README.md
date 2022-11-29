@@ -1,7 +1,7 @@
-# SUNNY CF
+# AVANTEC
 
 ### Description
-Proyecto web del curso profesional de PHP en codigo facilito
+AVANTEC'S WEB PAGE
 
 ### Author
 Emmanuel Lucio Urbina
