@@ -224,6 +224,48 @@
     /* Resize the background image to cover the entire container */
 }
 
+.contact--banners {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/telecomunicaciones/city.jpg");
+
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.contact--banners .content {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact--banners .content .content--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 50px 50px 0;
+    width: 800px;
+    height: inherit;
+    background-color: var(--christine);
+    color: #fff;
+}
+
+.contact--banners .content .content--info h1 {
+    font-size: 48px;
+}
+
+.contact--banners .content .content--info p {
+    font-size: 30px;
+}
+
 .action {
     width: 100%;
     height: 250px;
@@ -275,7 +317,7 @@
 .partners {
     width: 100%;
     height: 400px;
-    
+
     background-color: #fff;
 }
 
@@ -355,10 +397,11 @@
 
 footer {
     border-top: 1px solid var(--christine);
-    
+
     padding: 1em;
 }
-footer .content{
+
+footer .content {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -371,6 +414,74 @@ footer .content h3 {
     font-weight: 500;
 }
 
+.contact {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.contact .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact .content .form--action {
+    width: 700px;
+    text-align: center;
+}
+
+.contact .content .form--action h2 {
+    font-size: 30px;
+    color: #3e424b;
+}
+
+.contact .content .formulario {
+    width: 700px;
+
+}
+
+.control--group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.control--group input,
+textarea {
+    outline: none;
+    border: 1px solid var(--persian-blue);
+    padding: 1em 1.5em;
+    font-weight: 500;
+    width: 100%;
+    font-size: 17px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.control--horizontal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.primary {
+    outline: none;
+    border: 1px solid var(--christine);
+    background-color: #fff;
+    color: var(--christine);
+    width: 100%;
+}
 
 /* mobile */
 
@@ -382,6 +493,20 @@ footer .content h3 {
     .partners .content {
         grid-template-columns: 1fr;
     }
+
+    .contact--banners .content {
+        width: 100%;
+    }
+
+    .contact--banners .content .content--info {
+
+        border-radius: 0;
+        width: 100%;
+
+        background-color: transparent;
+
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -461,26 +586,50 @@ footer .content h3 {
     .action .content p {
         font-size: 16px;
     }
+
     .partners .content .content--info {
         padding: 1em;
         width: 100%;
     }
+
     .content--partners {
         gap: 2em;
     }
-    
+
     .card--partner {
-        
+
         display: flex;
         flex-direction: column;
         gap: .5em;
         align-items: center;
         justify-content: center;
     }
+
     .image--card {
         text-align: center;
     }
+
     .image--card img {
         width: 200px;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    .contact {
+        padding: 1em;
+    }
+
+    .contact .content .formulario,
+    .contact .content .form--action {
+        width: 100%;
+
+    }
+
+    .control--horizontal {
+
+        flex-direction: column;
+
     }
 }
