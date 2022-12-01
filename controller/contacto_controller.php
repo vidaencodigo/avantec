@@ -30,10 +30,12 @@ class ContactoController
 
             $nombre = $_REQUEST['name']. " ". $_REQUEST['sourn'];
             $this->mail($nombre, $_REQUEST['mail'], $_REQUEST['commnent']);
+            
         }
     }
     public function mail($name, $recip, $commnet)
     {
+        header("Location: index.php?controller=contacto&action=index", TRUE, 301);
         $mensaje = "
             Nombre: {$name}
             <br>
@@ -72,13 +74,13 @@ class ContactoController
             $mail->Subject = 'Servicios '. $name;
             $mail->Body    = $mensaje;
             $mail->AltBody = 'Mensaje de aplicación';
-        
+           
             $mail->send();
-
             
-            $this->index();
+            exit();
         } catch (Exception $e) {
             //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
+        
     }
 }
