@@ -84,7 +84,7 @@
                 </h2>
             </article>
             <article class="formulario">
-                <form class="form">
+                <form class="form" method="post" action="index.php?controller=contacto&action=send_mail">
                     <div class="control--horizontal">
 
                         <div class="control--group">
